@@ -16,7 +16,7 @@ $(call inherit-product, device/realme/RMX2020/device.mk)
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_RMX2020
+PRODUCT_NAME := lineage_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
@@ -33,5 +33,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Infinity-X Specific Flags
-INFINITY_MAINTAINER := dantepaulxd
-WITH_GAPPS := false
+MISTOS_MAINTAINER := dantepaulxd
+WITH_GMS := false
