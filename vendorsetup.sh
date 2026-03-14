@@ -17,3 +17,7 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b 
 # Hardware 
 rm -rf hardware/mediatek
 git clone https://github.com/RMX2020-Resources/hardware_mediatek hardware/mediatek -b sixteen --depth=1
+
+# Lineage Twelve
+rm -rf packages/apps/Twelve
+git clone https://github.com/LineageOS/android_packages_apps_Twelve packages/apps/Twelve -b lineage-23.2 --depth=1
