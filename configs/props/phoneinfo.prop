@@ -1,6 +1,9 @@
 # AboutPhone Info
-ro.product.marketname=Narzo 10A
-ro.infinity.soc=MediaTek Helio G70
-ro.infinity.camera=12MP + 2MP + 2MP
-ro.infinity.battery=5000 mAh
-ro.infinity.display=LCD 720 x 1600 60Hz
+ro.mist.display=720 x 1600, 60 hz
+ro.mist.battery=5000 mAh
+ro.mist.soc=MediaTek Helio G70
+ro.mist.camera=12MP + 2MP + 2MP
+ro.mist.front=5MP
+ro.mist.platform=MT6768
+ro.mist.screen=6.5' LCD
+ro.mist.device.name=Narzo 10A
