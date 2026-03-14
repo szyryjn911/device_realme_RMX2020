@@ -344,7 +344,6 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    TouchGestures \
     vendor.lineage.touch-service.RMX2020
 
 # Thermal
