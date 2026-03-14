@@ -1,5 +1,6 @@
 # AboutPhone Info
+ro.product.marketname=Narzo 10A
 ro.infinity.soc=MediaTek Helio G70
+ro.infinity.camera=12MP + 2MP + 2MP
 ro.infinity.battery=5000 mAh
-ro.infinity.display=720 x 1560, 60Hz
-ro.infinity.camera=13MP + 2MP + 2MP
+ro.infinity.display=720 x 1600 60Hz
