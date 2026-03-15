@@ -274,6 +274,9 @@ PRODUCT_PACKAGES += \
 -include $(DEVICE_PATH)/configs/props/vendor_logging_prop.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Priv-keys
+-include vendor/infinity-priv/keys/keys.mk
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
