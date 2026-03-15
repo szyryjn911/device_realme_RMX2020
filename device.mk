@@ -392,6 +392,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
-
-# Fix duplicate ambient_data.xml conflict
-PRODUCT_COPY_FILES := $(filter-out %ambient_data.xml:%,$(PRODUCT_COPY_FILES))
