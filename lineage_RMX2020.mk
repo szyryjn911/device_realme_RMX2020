@@ -33,5 +33,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Infinity-X Specific Flags
-MISTOS_MAINTAINER := dantepaulxd
+MISTOS_MAINTAINER := szyryjn
 WITH_GMS := false
+TARGET_ENABLE_BLUR := false
