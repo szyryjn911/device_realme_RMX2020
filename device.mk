@@ -250,6 +250,10 @@ PRODUCT_COPY_FILES += \
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
+# Overlay
+PRODUCT_PACKAGES += \
+    RMX2020Settings \
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr

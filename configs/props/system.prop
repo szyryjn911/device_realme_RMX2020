@@ -26,6 +26,9 @@ pm.dexopt.install=speed-profile
 debug.sf.enable_hwc_vds=0
 sys.brightness.disable_gamma_conversion=true
 
+# LunarisAOSP Flags
+ro.lunaris.maintainer=szyryjn
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
