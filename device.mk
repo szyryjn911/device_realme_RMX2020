@@ -250,6 +250,9 @@ PRODUCT_COPY_FILES += \
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr
@@ -341,10 +344,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Text classifier
 PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch-service.RMX2020
 
 # Thermal
 PRODUCT_PACKAGES += \
