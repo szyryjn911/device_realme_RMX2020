@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
+# Inherit some common Clover Project stuff.
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := clover_RMX2020
 PRODUCT_DEVICE := RMX2020
@@ -31,3 +34,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Clover flags
 CLOVER_MAINTAINER := szyryjn
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_ENABLE_BLUR := true
