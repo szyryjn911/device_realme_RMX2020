@@ -15,6 +15,15 @@ $(call inherit-product, device/realme/RMX2020/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Axion Stuff
+AXION_CAMERA_REAR_INFO := 12,2
+AXION_CAMERA_FRONT_INFO := 5
+AXION_MAINTAINER := Szyryjn
+AXION_PROCESSOR := MTK_Helio_G70
+TARGET_INCLUDES_LOS_PREBUILTS := true
+PRODUCT_NO_CAMERA := false
+BYPASS_CHARGE_SUPPORTED := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_RMX2020
 PRODUCT_DEVICE := RMX2020
@@ -33,5 +42,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Gapps
-WITH_GMS := false
+axion RMX2020 va
 TARGET_SUPPORTED_REFRESH_RATES := 60
