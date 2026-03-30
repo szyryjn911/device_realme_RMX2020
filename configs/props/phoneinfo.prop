@@ -1,9 +1,9 @@
 # AboutPhone Info
-ro.derp.display=720 x 1600, 60 hz
-ro.derp.battery=5000 mAh
-ro.derp.soc=MediaTek Helio G70
-ro.derp.camera=12MP + 2MP + 2MP
-ro.derp.front=5MP
-ro.derp.platform=MT6768
-ro.derp.screen=6.5' LCD
-ro.derp.device.name=Narzo 10A
+ro.evolution.display=720 x 1600, 60 hz
+ro.evolution.battery=5000 mAh
+ro.evolution.soc=MediaTek Helio G70
+ro.evolution.camera=12MP + 2MP + 2MP
+ro.evolution.front=5MP
+ro.evolution.platform=MT6768
+ro.evolution.screen=6.5' LCD
+ro.evolution.device.name=Narzo 10A

@@ -15,6 +15,10 @@ $(call inherit-product, device/realme/RMX2020/device.mk)
 # Inherit some common PixelOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+EVO_BUILD_TYPE := Unofficial
+TARGET_HAS_UDFPS := true
+TARGET_BUILD_APERTURE_CAMERA := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_RMX2020
 PRODUCT_DEVICE := RMX2020
