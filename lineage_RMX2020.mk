@@ -34,4 +34,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Gapps
 WITH_GMS := false
+
+#Additional Lunaris Flags
+PERF_ANIM_OVERRIDE := true
+SURFACE_FLINGER_BOOST := true
+TARGET_ENABLE_BLUR := false
 TARGET_SUPPORTED_REFRESH_RATES := 60
