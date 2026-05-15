@@ -1,0 +1,34 @@
+# NGK Kernel Manager SELinux Policy
+# Allows com.ngk.manager app to read/write NGK sysfs nodes
+
+# Define NGK sysfs type
+type ngk_sysfs, fs_type, sysfs_type;
+
+# Label all NGK kernel nodes
+genfscon sysfs /kernel/ngk         u:object_r:ngk_sysfs:s0
+genfscon sysfs /kernel/cpu_boost   u:object_r:ngk_sysfs:s0
+genfscon sysfs /kernel/ngk_thermal u:object_r:ngk_sysfs:s0
+genfscon sysfs /kernel/ngk_memory  u:object_r:ngk_sysfs:s0
+genfscon sysfs /kernel/ngk_touch   u:object_r:ngk_sysfs:s0
+genfscon sysfs /kernel/ngk_profile u:object_r:ngk_sysfs:s0
+
+# Allow untrusted_app (NGK Manager) to read/write
+allow untrusted_app ngk_sysfs:file { read write open getattr ioctl };
+allow untrusted_app ngk_sysfs:dir  { read open search getattr };
+
+# Allow ksu (root shell) to read/write
+allow ksu ngk_sysfs:file { read write open getattr ioctl append };
+allow ksu ngk_sysfs:dir  { read write open search getattr };
+
+# Allow shell to read/write (su -c commands)
+allow shell ngk_sysfs:file { read write open getattr ioctl append };
+allow shell ngk_sysfs:dir  { read open search getattr };
+
+# Allow priv_app too (in case NGK Manager is installed as system app)
+allow priv_app ngk_sysfs:file { read write open getattr ioctl };
+allow priv_app ngk_sysfs:dir  { read open search getattr };
+
+# Allow ksu and shell to write /proc/ppm and /proc/cpufreq
+allow ksu   proc:file { read write open getattr ioctl append };
+allow shell proc:file { read write open getattr ioctl append };
+allow ksu   proc_net:file { read write open getattr };

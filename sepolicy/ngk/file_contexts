@@ -1,0 +1,6 @@
+/sys/kernel/ngk(/.*)?         u:object_r:ngk_sysfs:s0
+/sys/kernel/cpu_boost(/.*)?   u:object_r:ngk_sysfs:s0
+/sys/kernel/ngk_thermal(/.*)? u:object_r:ngk_sysfs:s0
+/sys/kernel/ngk_memory(/.*)?  u:object_r:ngk_sysfs:s0
+/sys/kernel/ngk_touch(/.*)?   u:object_r:ngk_sysfs:s0
+/sys/kernel/ngk_profile(/.*)? u:object_r:ngk_sysfs:s0
