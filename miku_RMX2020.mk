@@ -12,11 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common miku stuff.
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX2020
+PRODUCT_NAME := miku_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
@@ -33,10 +33,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Gapps
-WITH_GMS := false
-
-#Additional Lunaris Flags
-PERF_ANIM_OVERRIDE := true
-SURFACE_FLINGER_BOOST := true
-TARGET_ENABLE_BLUR := false
-TARGET_SUPPORTED_REFRESH_RATES := 60
+MIKU_GAPPS := true
+TARGET_WITH_KERNEL_SU := false
+MIKU_MASTER := szyryjn
