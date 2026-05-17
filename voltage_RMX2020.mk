@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common PixelOS stuff.
+# Inherit some common Voltage stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
@@ -44,3 +44,4 @@ VOLTAGE_CPU_UNLIMIT_UI := 0-7
 VOLTAGE_CPU_LIMIT_UI := 0-5
 VOLTAGE_CPU_DISPLAY := 6-7
 VOLTAGE_CPU_AUDIO := 0-4
+TARGET_BOOT_ANIMATION_RES := 1080

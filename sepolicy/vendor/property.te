@@ -9,3 +9,8 @@ vendor_public_prop(vendor_oplus_fingerprint_prop)
 
 # Radio
 vendor_public_prop(vendor_oplus_radio_prop)
+
+# FIX ERRORS
+type vendor_mtk_deinterlace_prop, property_type;
+type vendor_mtk_crossmount_prop, property_type;
+type vendor_mtk_omx_core_prop, property_type;

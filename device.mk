@@ -251,7 +251,7 @@ PRODUCT_COPY_FILES += \
 TARGET_BOARD_PLATFORM := mt6768
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay-voltage
 
 # Power
 PRODUCT_PACKAGES += \
